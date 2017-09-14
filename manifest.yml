@@ -1,0 +1,7 @@
+applications:
+- name:    mlnlmk_test
+  memory:  2048M
+  disk_quota: 2048M
+  path: ./
+  command: gunicorn -w 1 --max-requests 2 --timeout 300000 app:app
+  buildpack: https://github.com/cloudfoundry/python-buildpack.git#v1.5.24
