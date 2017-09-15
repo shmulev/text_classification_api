@@ -10,3 +10,4 @@ pylev==1.3.0
 gunicorn
 Jinja2
 Werkzeug
+nltk

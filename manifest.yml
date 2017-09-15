@@ -1,5 +1,5 @@
 applications:
-- name:    mlnlmk_test
+- name:    mlnlmk
   memory:  2048M
   disk_quota: 2048M
   path: ./
