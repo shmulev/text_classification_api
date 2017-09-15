@@ -16,6 +16,7 @@ def handle_classify():
         __json = json.loads(json.dumps(request.json))
 
         label, prob = classify(__json)
+
         if (type(label) == NameError):
             return not_found(404, "Could not load the data")
         else:

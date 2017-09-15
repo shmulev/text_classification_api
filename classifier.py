@@ -1,10 +1,11 @@
 import numpy as np
 import pickle
+from utils import stemming
 
 def classify(dataJSON):
 	#load the pretrained model
 	try:
-		clf = pickle.load(open("clf_small.pkl", "rb"))
+		clf = pickle.load(open("clf.pkl", "rb"))
 
 		#classify new command
 		#CLF_THRES = 0.17
