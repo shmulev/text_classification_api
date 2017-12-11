@@ -1,7 +1,7 @@
 # text_classification_api
 SAP WEB API for classification of bank transaction type.
 ___
-### How to deploy an app:
+### Deploying the app:
 1. Download Cloud Foundry CLI: https://docs.cloudfoundry.org/cf-cli/install-go-cli.html
 2. Go to the project root from CLI
 3. From the CLI run `cf login`:
