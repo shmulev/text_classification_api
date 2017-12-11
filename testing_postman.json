@@ -1,0 +1,44 @@
+{
+	"info": {
+		"name": "Testing Apps",
+		"_postman_id": "82bb2aea-aa35-1cc8-3654-ef92fcbcf68a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Text_Classification_API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"Комиссия за выдачу 08.10.2012 завереных 5 копий расчетно- денежных документов за05.10.2012№REF4<<ИМЯ>ОАО  ЛИПЕЦККОМБАНКИНН=4825005381КПП=\"}"
+				},
+				"url": {
+					"raw": "https://mlnlmk.cfapps.eu10.hana.ondemand.com/api/classify",
+					"protocol": "https",
+					"host": [
+						"mlnlmk",
+						"cfapps",
+						"eu10",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"api",
+						"classify"
+					]
+				},
+				"description": "Send the request with text description. The response is the label and probability.\t"
+			},
+			"response": []
+		}
+	]
+}
